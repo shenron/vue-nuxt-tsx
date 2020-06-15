@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "jsx": "preserve",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "strict": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noImplicitThis": false,
+    "allowJs": true,
+    "baseUrl": ".",
+    "lib": ["esnext", "dom"],
+    "outDir": "/dist",
+    "paths": {
+        "*": ["types/*"],
+      "@/*": ["src/*"]
+    }
+  }
+}
