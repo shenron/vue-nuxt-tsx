@@ -2,20 +2,23 @@
   "name": "example-composition-api-minimal",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@vue/composition-api": "latest",
-    "nuxt": "latest"
-  },
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "nuxt",
     "generate": "nuxt generate",
-    "post-update": "yarn upgrade --latest"
+    "post-update": "yarn upgrade --latest",
+    "start": "nuxt start",
+    "start:cluster": "pm2 start npm --name nuxt -i max -- start",
+    "stop:cluster": "pm2 kill"
+  },
+  "dependencies": {
+    "@vue/composition-api": "latest"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "latest",
     "node-sass": "^4.14.1",
+    "nuxt": "latest",
+    "pm2": "^4.4.0",
     "sass-loader": "^8.0.2"
   }
 }
