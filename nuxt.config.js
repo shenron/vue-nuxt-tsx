@@ -1,5 +1,8 @@
 export default {
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: [
+    '@nuxt/typescript-build',
+    '@nuxtjs/vuetify',
+  ],
   plugins: ['~/plugins/composition-api'],
   extensions: ['ts', 'tsx', 'js'],
   srcDir: 'src/',

@@ -1,9 +1,10 @@
 <template>
-  <section class="container">
-    <div>
+  <v-app>
+    <v-main>
       <TheHeader />
-    </div>
-  </section>
+      <v-container>Hello world</v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script lang="tsx">
@@ -16,3 +17,6 @@ export default defineComponent({
   },
 })
 </script>
+
+<style lang="scss" scoped>
+</style>
