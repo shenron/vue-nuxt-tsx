@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "types": [
+      "@types/node",
+      "@nuxt/vue-app",
+      "@types/jest"
+    ],
     "target": "es2018",
     "jsx": "preserve",
     "noImplicitAny": false,
@@ -11,11 +16,15 @@
     "noImplicitThis": false,
     "allowJs": true,
     "baseUrl": ".",
-    "lib": ["esnext", "dom"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "outDir": "/dist",
     "paths": {
-        "*": ["types/*"],
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     }
   }
 }

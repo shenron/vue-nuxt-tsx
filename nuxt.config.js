@@ -7,7 +7,6 @@ export default {
   extensions: ['ts', 'tsx', 'js'],
   srcDir: 'src/',
   styleResources: {
-    scss: ['./src/**/*.scss']
+    scss: ['./src/**/*.scss'],
   },
-}
-
+};

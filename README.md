@@ -1,3 +1,8 @@
-# Nuxt TypeScript with Composition API (minimal)
+# Nuxt TypeScript with Composition API
 
-https://typescript.nuxtjs.org/examples/composition-api/minimal
+Babel is used only for unit test with jest.
+- "@babel/preset-typescript"
+- "@vue/cli-plugin-babel"
+- "babel-preset-vca-jsx"
+- "vue"
+- "vuetify"

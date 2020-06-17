@@ -6,20 +6,41 @@
     "build": "nuxt build",
     "dev": "nuxt",
     "generate": "nuxt generate",
+    "lint": "eslint --ext .jsx,.js,.ts,.tsx src/ tests/",
+    "lint:fix": "eslint --ext .jsx,.js,.ts,.tsx src/ tests/ --fix",
     "post-update": "yarn upgrade --latest",
     "start": "nuxt start",
     "start:cluster": "pm2 start npm --name nuxt -i max -- start",
-    "stop:cluster": "pm2 kill"
+    "stop:cluster": "pm2 kill",
+    "test": "jest"
   },
   "dependencies": {
-    "@vue/composition-api": "^0.6.4"
+    "@vue/composition-api": "^0.6.4",
+    "vue": "^2.6.11",
+    "vuetify": "^2.3.1"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.10.1",
     "@nuxt/typescript-build": "^1.0.3",
+    "@nuxtjs/eslint-config-typescript": "^2.0.0",
     "@nuxtjs/vuetify": "^1.11.2",
+    "@types/jest": "^26.0.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "@vue/cli-plugin-babel": "~4.4.4",
+    "@vue/cli-plugin-unit-jest": "~4.4.4",
+    "@vue/test-utils": "^1.0.3",
+    "babel-preset-vca-jsx": "^0.3.5",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.21.2",
+    "jest": "^26.0.1",
     "node-sass": "^4.14.1",
     "nuxt": "^2.12.2",
     "pm2": "^4.4.0",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5",
+    "vue-jest": "^3.0.5"
   }
 }

@@ -9,13 +9,13 @@
 
 <script lang="tsx">
 import { defineComponent } from '@vue/composition-api';
-import TheHeader from '@/components/TheHeader'
+import TheHeader from '@/components/the_header/TheHeader';
 
 export default defineComponent({
   components: {
     TheHeader,
   },
-})
+});
 </script>
 
 <style lang="scss" scoped>
