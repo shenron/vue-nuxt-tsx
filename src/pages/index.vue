@@ -49,5 +49,6 @@ export default defineComponent({
       amazingList,
     };
   },
+  fetchOnServer: true,
 });
 </script>
