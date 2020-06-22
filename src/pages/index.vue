@@ -8,7 +8,7 @@
   </v-app>
 </template>
 
-<script lang="tsx">
+<script lang="ts">
 import https from 'https';
 import {
   defineComponent,
@@ -21,8 +21,13 @@ export default defineComponent({
   components: {
     TheHeader,
   },
-  setup() {
+  setup(props, context) {
     const amazingList = ref<Array<any>>([]);
+
+    const nuxtContext: any = context;
+    if (!nuxtContext.isServer) {
+      console.log(window);
+    }
 
     const getData = async () => new Promise((resolve) => {
       https.get('https://reqres.in/api/users?page=2', (res) => {
