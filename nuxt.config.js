@@ -1,9 +1,11 @@
 export default {
   buildModules: [
     '@nuxt/typescript-build',
-    '@nuxtjs/vuetify',
+    ['@nuxtjs/vuetify', {
+      treeShake: true, // 'a la carte' works only in .vue file
+    }],
+    'nuxt-composition-api',
   ],
-  plugins: ['~/plugins/composition-api'],
   extensions: ['ts', 'tsx', 'js'],
   srcDir: 'src/',
   styleResources: {
