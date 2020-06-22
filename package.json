@@ -15,6 +15,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@vue/composition-api": "^0.6.6",
     "nuxt-composition-api": "^0.9.3",
     "vue": "^2.6.11",
     "vuetify": "^2.3.1"

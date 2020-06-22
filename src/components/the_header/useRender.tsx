@@ -1,57 +1,45 @@
 import { CreateElement, VNode } from 'vue';
-import {
-  VAppBarNavIcon,
-  VToolbarTitle,
-  VSpacer,
-  VBtn,
-  VMenu,
-  VAppBar,
-  VIcon,
-  VList,
-  VListItemTitle,
-  VListItem,
-} from 'vuetify/lib';
 
 export default function (h: CreateElement, context: any): VNode {
   const { items } = context;
 
   return (
-    <VAppBar dark>
-      <VAppBarNavIcon />
+    <v-app-bar dark>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-      <VToolbarTitle>Title</VToolbarTitle>
+      <v-toolbar-title>Title</v-toolbar-title>
 
-      <VSpacer></VSpacer>
+      <v-spacer></v-spacer>
 
-      <VBtn icon>
-        <VIcon>mdi-magnify</VIcon>
-      </VBtn>
+      <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
 
-      <VMenu
+      <v-menu
         bottom
         left
         scopedSlots={{
           activator: ({ on, attrs }) => (
-            <VBtn
+            <v-btn
               icon
               color="yellow"
               attrs={attrs}
               on={on}
             >
-              <VIcon>mdi-dots-vertical</VIcon>
-            </VBtn>
+              <v-icon>mdi-dots-vertical</v-icon>
+            </v-btn>
           ),
           default: () => (
-            <VList>
+            <v-list>
               {items.map((item, i) => (
-                <VListItem key={i}>
-                  <VListItemTitle>{item.title}</VListItemTitle>
-                </VListItem>
+                <v-list-item key={i}>
+                  <v-list-item-title>{item.title}</v-list-item-title>
+                </v-list-item>
               ))}
-            </VList>
+            </v-list>
           ),
         }}
       />
-    </VAppBar>
+    </v-app-bar>
   );
 }

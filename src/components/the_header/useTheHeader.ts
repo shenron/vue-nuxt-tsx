@@ -1,4 +1,4 @@
-import { computed } from 'nuxt-composition-api';
+import { computed } from '@vue/composition-api';
 
 export default function () {
   const items = computed<Array<{ title: string }>>(() => ([
