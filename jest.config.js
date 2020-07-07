@@ -7,4 +7,7 @@ module.exports = {
       },
     },
   },
+  moduleNameMapper: {
+    'nuxt-composition-api': 'nuxt-composition-api/lib/cjs/entrypoint.js',
+  },
 };

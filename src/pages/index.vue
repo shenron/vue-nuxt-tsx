@@ -29,7 +29,7 @@ export default defineComponent({
       console.log(window);
     }
 
-    const getData = async () => new Promise((resolve) => {
+    const getData = async () => new Promise<void>((resolve) => {
       https.get('https://reqres.in/api/users?page=2', (res) => {
         let body = '';
         res.on('data', (chunk) => {
@@ -49,6 +49,6 @@ export default defineComponent({
       amazingList,
     };
   },
-  fetchOnServer: true,
+  fetchOnServer: false,
 });
 </script>

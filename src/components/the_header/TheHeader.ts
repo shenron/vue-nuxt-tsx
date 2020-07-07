@@ -1,5 +1,5 @@
 import type { CreateElement, VNode } from 'vue';
-import { defineComponent } from '@vue/composition-api';
+import { defineComponent } from 'nuxt-composition-api';
 import useRender from './useRender';
 import useTheHeader from './useTheHeader';
 
