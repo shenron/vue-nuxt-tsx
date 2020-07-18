@@ -1,5 +1,11 @@
 # Nuxt TypeScript with Composition API
 
+## Start as dev
+> npm run dev
+
+## Generate as static website
+> npm run generate
+
 Babel is used only for unit test with jest.
 - "@babel/preset-typescript"
 - "@vue/cli-plugin-babel"
