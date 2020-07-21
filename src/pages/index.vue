@@ -9,7 +9,6 @@
 </template>
 
 <script lang="ts">
-import 'vue-apollo';
 import https from 'https';
 import { defineComponent, ref, useFetch } from 'nuxt-composition-api';
 import TheHeader from '@/components/the_header/TheHeader';

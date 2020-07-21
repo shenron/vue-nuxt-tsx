@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
       <TheHeader />
-      <v-container>Graphql Test</v-container>
+      <v-container>Graphql Composition Test</v-container>
       {{ result }}
     </v-main>
   </v-app>

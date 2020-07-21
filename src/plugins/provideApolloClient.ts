@@ -1,15 +1,10 @@
-import { provide, reactive } from 'nuxt-composition-api';
-import { Context, Plugin } from '@nuxt/types';
+import { provide } from 'nuxt-composition-api';
 import { DefaultApolloClient } from '@vue/apollo-composable';
 
-const provideApollo: Plugin = ({ app }: Context) => {
+export default ({ app }) => {
   app.setup = () => {
-    // since plugin is eval'd after module app.apolloProvider will always be defined
-    const clients = reactive(app.apolloProvider?.clients);
-    provide(DefaultApolloClient, clients?.defaultClient);
-    // not functionally important but req'd return type
-    return { [DefaultApolloClient]: clients };
+    const apolloClient = app.apolloProvider.defaultClient;
+
+    provide(DefaultApolloClient, apolloClient);
   };
 };
-
-export default provideApollo;

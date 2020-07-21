@@ -26,5 +26,13 @@
         "src/*"
       ]
     }
-  }
+  },
+  "files": [
+    "shims-vue.d.ts",
+    "shims-gql.d.ts"
+  ],
+  "include": [
+    "apollo/queries/*.gql",
+    "apollo/queries/**/*.gql"
+  ]
 }
