@@ -14,7 +14,7 @@ export default {
   },
   modules: ['@nuxtjs/apollo'],
   plugins: [
-    '~/plugins/importVuetify',
+    '~/plugins/importVuetify.ts',
     '~/plugins/provideApolloClient.ts',
   ],
   // Give apollo module options
