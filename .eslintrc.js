@@ -39,5 +39,6 @@ module.exports = {
     }],
     'func-names': 0,
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^(_|h)' }],
+    'prefer-default-export': 0,
   },
 };
