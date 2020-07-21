@@ -12,9 +12,7 @@
 import 'vue-apollo';
 import https from 'https';
 import { defineComponent, ref, useFetch } from 'nuxt-composition-api';
-import { useQuery } from '@vue/apollo-composable';
 import TheHeader from '@/components/the_header/TheHeader';
-import { TestQuery } from './queries';
 
 export default defineComponent({
   components: {
@@ -22,8 +20,6 @@ export default defineComponent({
   },
   setup(props, context) {
     const amazingList = ref<Array<any>>([]);
-
-    const { result } = useQuery(TestQuery);
 
     const nuxtContext: any = context;
     if (!nuxtContext.isServer) {
@@ -47,7 +43,6 @@ export default defineComponent({
     useFetch(getData);
 
     return {
-      result,
       amazingList,
     };
   },

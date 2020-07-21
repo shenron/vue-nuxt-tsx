@@ -3,7 +3,7 @@
     <v-main>
       <TheHeader />
       <v-container>Graphql Test</v-container>
-      {{ homeOverview.totalVessels }}
+      {{ testQuery }}
     </v-main>
   </v-app>
 </template>
@@ -18,7 +18,7 @@ export default {
     TheHeader,
   },
   apollo: {
-    homeOverview: {
+    testQuery: {
       prefetch: true,
       query: TestQuery,
     },
