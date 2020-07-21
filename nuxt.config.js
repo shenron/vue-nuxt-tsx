@@ -1,4 +1,5 @@
 export default {
+  srcDir: 'src/',
   buildModules: [
     '@nuxt/typescript-build',
     ['@nuxtjs/vuetify', {
@@ -7,15 +8,15 @@ export default {
     }],
     'nuxt-composition-api',
   ],
-  plugins: ['~/plugins/importVuetify'],
   extensions: ['ts', 'tsx', 'js'],
-  srcDir: 'src/',
   styleResources: {
     scss: ['./src/**/*.scss'],
   },
-  // Add apollo module
   modules: ['@nuxtjs/apollo'],
-
+  plugins: [
+    '~/plugins/importVuetify',
+    '~/plugins/provideApolloClient.ts',
+  ],
   // Give apollo module options
   apollo: {
     cookieAttributes: {

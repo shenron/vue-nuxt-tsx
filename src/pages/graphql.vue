@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import gql from 'graphql-tag';
 import TheHeader from '@/components/the_header/TheHeader';
+import { TestQuery } from './queries';
 
 export default {
   name: 'Graphql',
@@ -20,9 +20,7 @@ export default {
   apollo: {
     homeOverview: {
       prefetch: true,
-      query: gql` {
-        homeOverview { totalVessels }
-      }`,
+      query: TestQuery,
     },
   },
 };

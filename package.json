@@ -14,15 +14,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxt/types": "^2.13.3",
     "@nuxtjs/apollo": "^4.0.1-rc.1",
+    "@vue/apollo-composable": "^4.0.0-alpha.8",
     "graphql-tag": "^2.10.4",
     "nuxt-composition-api": "^0.10.6",
     "vue": "^2.6.11",
+    "vue-apollo": "^3.0.3",
     "vuetify": "^2.3.4"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.4",
-    "@nuxt/types": "^2.13.3",
     "@nuxt/typescript-build": "^2.0.0",
     "@nuxtjs/eslint-config-typescript": "^2.0.0",
     "@nuxtjs/vuetify": "^1.11.2",
