@@ -14,7 +14,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@nuxt/types": "^2.14.0",
     "@nuxtjs/apollo": "^4.0.1-rc.1",
     "@vue/apollo-composable": "^4.0.0-alpha.10",
     "graphql-tag": "^2.10.4",
@@ -24,6 +23,7 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.4",
+    "@nuxt/types": "^2.14.0",
     "@nuxt/typescript-build": "^2.0.2",
     "@nuxtjs/eslint-config-typescript": "^3.0.0",
     "@nuxtjs/vuetify": "^1.11.2",
