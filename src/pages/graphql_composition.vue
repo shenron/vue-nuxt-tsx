@@ -19,13 +19,14 @@ export default defineComponent({
     TheHeader,
   },
   setup() {
-    const { result } = useQuery(TestQuery);
+    const { result } = useQuery(TestQuery, {}, {
+      fetchPolicy: 'no-cache',
+      //      prefetch: false,
+    });
 
     return {
       result,
     };
   },
-}, {
-  fetchOnServer: false,
 });
 </script>
