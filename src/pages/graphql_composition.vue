@@ -25,5 +25,7 @@ export default defineComponent({
       result,
     };
   },
+}, {
+  fetchOnServer: false,
 });
 </script>
