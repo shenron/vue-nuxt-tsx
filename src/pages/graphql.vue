@@ -19,7 +19,7 @@ export default {
   },
   apollo: {
     testQuery: {
-      prefetch: true,
+      prefetch: false,
       query: TestQuery,
     },
   },
